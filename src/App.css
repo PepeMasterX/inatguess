@@ -1,135 +1,112 @@
-/* Estilo global */
 body {
   margin: 0;
   padding: 0;
   font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
-  background-color: #121212; /* fondo oscuro */
-  color: #f3f3f3;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-/* Contenedor principal */
-.app-container {
-  width: 90%;
-  max-width: 600px;
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
   padding: 2rem;
-  background: #1e1e1e;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 700px;
 }
 
-/* Título */
-.title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  color: #7ef9ff;
-}
-
-/* Puntuación */
-.score {
+h1 {
+  font-size: 2.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #bbf7d0;
+  color: #a7f3d0;
+  margin-bottom: 0.5rem;
 }
 
-/* Imagen */
-.observation-image {
-  width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+p {
+  color: #d1d5db;
 }
 
-/* Formulario */
-.form-group {
-  margin-top: 1.5rem;
-  text-align: left;
-}
-
-/* Selector y entrada */
-select,
-.guess-input {
+input,
+select {
   width: 100%;
   padding: 0.6rem;
-  margin-top: 0.5rem;
-  border-radius: 0.375rem;
-  border: 1px solid #333;
-  background-color: #2a2a2a;
-  color: #fff;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #555;
+  background-color: #2e2e2e;
+  color: #f3f3f3;
 }
 
-/* Lista de sugerencias */
-.suggestion-list {
-  margin-top: 0.5rem;
-  border: 1px solid #444;
-  background: #2a2a2a;
-  max-height: 150px;
-  overflow-y: auto;
-  text-align: left;
-  border-radius: 0.375rem;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0;
 }
 
-.suggestion-list li {
+ul li {
+  background-color: #333;
   padding: 0.5rem;
   cursor: pointer;
 }
 
-.suggestion-list li:hover {
-  background-color: #3a3a3a;
+ul li:hover {
+  background-color: #444;
 }
 
-/* Botones */
-.submit-button,
-.next-button {
-  margin-top: 1rem;
-  background-color: #10b981;
-  color: white;
+button {
+  background-color: #4ade80;
+  color: black;
+  padding: 0.5rem 1rem;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.375rem;
-  cursor: pointer;
+  border-radius: 0.5rem;
   font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
 }
 
-.submit-button:hover,
-.next-button:hover {
-  background-color: #059669;
+button:hover {
+  background-color: #22c55e;
 }
 
-.submit-button:disabled {
+button:disabled {
   background-color: #6b7280;
+  color: #ccc;
   cursor: not-allowed;
 }
 
-/* Resultados */
-.result-box {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #2a2a2a;
+img {
+  max-width: 100%;
   border-radius: 0.5rem;
-  text-align: left;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.result-box {
+  background-color: #2e2e2e;
+  color: #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1rem;
 }
 
 .correct {
   color: #86efac;
-  font-weight: bold;
 }
 
 .wrong {
   color: #f87171;
-  font-weight: bold;
 }
 
-/* Estado de carga */
-.loading {
-  font-family: "Lato", "Trebuchet MS", Arial, sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 2rem;
+a {
+  color: #60a5fa;
+  text-decoration: underline;
 }
-
